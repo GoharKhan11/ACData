@@ -1,0 +1,72 @@
+Bard
+Cleric
+Fighter
+Mage
+Ranger
+Rogue
+Summoner
+Tank
+Minstrel
+Soul Weaver
+Tellsword
+Magician
+Song Warden
+Trickster
+Songcaller
+Siren
+Scryer
+High Priest
+Templar
+Oracle
+Protector
+Shadow Disciple
+Shaman
+Apostle
+Bladedancer
+Highsword
+Weapon Master
+Spellsword
+Hunter
+Shadowblade
+Bladecaller
+Dreadnought
+Sorcerer
+Acolyte
+Battle Mage
+Archwizard
+Spellhunter
+Shadow Caster
+Warlock
+Spellstone
+Bowsinger
+Soulbow
+Strider
+Scion
+Hawkeye
+Scout
+Falconer
+Sentinel
+Charlatan
+Cultist
+Duelist
+Nightspell
+Predator
+Assassin
+Shadow Lord
+Shadow Guardian
+Enchanter
+Necromancer
+Wild Blade
+Spellmancer
+Beastmaster
+Shadowmancer
+Conjurer
+Brood Warden
+Argent
+Paladin
+Knight
+Spellshield
+Warden
+Nightshield
+Keeper
+Guardian
