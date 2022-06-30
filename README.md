@@ -1,8 +1,10 @@
 # ACData
 
-A program to read data from ashes webpage and store data on desired classes.
+A program to read data from ashes comment thread and store data on character classes by mentions.
 I do not own and am not affiliated with Ashes of Creation.
 This program is for learning purposes only.
+
+Version: 1.2
 
 Goals:
 - Learn regex usage.
@@ -21,15 +23,23 @@ Inputs:
 - Takes in an integer for the number of pages in the comment thread.
 
 Outputs:
-- Creates a directory with two files. One has the entire comment history, one has only class mentions. Both have authors and author IDs.
+- Creates a directory (AC-files) with three files as follows:
+-- full-comment-history.txt has the complete comment thread.
+-- class-summary.txt has usernames and the classes they mention.
+-- class-stats.txt has number of mentions for each class as well as percentage mentions out of total classes mentioned (added v1.2).
+
+Strengths:
+- Uses minimal traversals of the html and class count (uses a single pass through).
 
 Issues:
 - All code in a single file. (Fixable and section marked using comments for easier visualization and readability).
-- Relies on the user providing proper input for the comment.
+- Relies on the user providing proper input for the number of pages in the comment thread.
 - lots of regex searches.
+- Overcounts simpler names (will count battle mage as mage as well).
 
 
 Key Things learnt:
 - Perl (basics, subroutines, File IO, references, UserAgent).
 - Keep outputs flexible to allow for easier changes and less changes to existing code.
+- Different file IO usage (read and write).
 - Handling perl specific issues around subroutine arguments and other limitations.

@@ -157,227 +157,523 @@ sub saveComment {
   # ---------------------------------------------------------------------------
 }
 
+#------------------------------------------------------------------------------
+# Below Variables are to store statistics (73 lines).
+#------------------------------------------------------------------------------
+
+our $total_class_counter = 0;
+our $Bard_counter = 0;
+our $Cleric_counter = 0;
+our $Fighter_counter = 0;
+our $Mage_counter = 0;
+our $Ranger_counter = 0;
+our $Rogue_counter = 0;
+our $Summoner_counter = 0;
+our $Tank_counter = 0;
+our $Minstrel_counter = 0;
+our $Soul_Weaver_counter = 0;
+our $Tellsword_counter = 0;
+our $Magician_counter = 0;
+our $Song_Warden_counter = 0;
+our $Trickster_counter = 0;
+our $Songcaller_counter = 0;
+our $Siren_counter = 0;
+our $Scryer_counter = 0;
+our $High_Priest_counter = 0;
+our $Templar_counter = 0;
+our $Oracle_counter = 0;
+our $Protector_counter = 0;
+our $Shadow_Disciple_counter = 0;
+our $Shaman_counter = 0;
+our $Apostle_counter = 0;
+our $Bladedancer_counter = 0;
+our $Highsword_counter = 0;
+our $Weapon_Master_counter = 0;
+our $Spellsword_counter = 0;
+our $Hunter_counter = 0;
+our $Shadowblade_counter = 0;
+our $Bladecaller_counter = 0;
+our $Dreadnought_counter = 0;
+our $Sorcerer_counter = 0;
+our $Acolyte_counter = 0;
+our $Battle_Mage_counter = 0;
+our $Archwizard_counter = 0;
+our $Spellhunter_counter = 0;
+our $Shadow_Caster_counter = 0;
+our $Warlock_counter = 0;
+our $Spellstone_counter = 0;
+our $Bowsinger_counter = 0;
+our $Soulbow_counter = 0;
+our $Strider_counter = 0;
+our $Scion_counter = 0;
+our $Hawkeye_counter = 0;
+our $Scout_counter = 0;
+our $Falconer_counter = 0;
+our $Sentinel_counter = 0;
+our $Charlatan_counter = 0;
+our $Cultist_counter = 0;
+our $Duelist_counter = 0;
+our $Nightspell_counter = 0;
+our $Predator_counter = 0;
+our $Assassin_counter = 0;
+our $Shadow_Lord_counter = 0;
+our $Shadow_Guardian_counter = 0;
+our $Enchanter_counter = 0;
+our $Necromancer_counter = 0;
+our $Wild_Blade_counter = 0;
+our $Spellmancer_counter = 0;
+our $Beastmaster_counter = 0;
+our $Shadowmancer_counter = 0;
+our $Conjurer_counter = 0;
+our $Brood_Warden_counter = 0;
+our $Argent_counter = 0;
+our $Paladin_counter = 0;
+our $Knight_counter = 0;
+our $Spellshield_counter = 0;
+our $Warden_counter = 0;
+our $Nightshield_counter = 0;
+our $Keeper_counter = 0;
+our $Guardian_counter = 0;
+
+#------------------------------------------------------------------------------
+
 # -----------------------------------------------------------------------------
 # Subroutine to get the names of all classes in a blockquote+comment
 # -----------------------------------------------------------------------------
 
 sub getClasses {
   my $result = "";
+
   if (lc($_[0]) =~ lc("Bard")) {
   	$result = $result."Bard.";
+  	$Bard_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Cleric")) {
   	$result = $result."Cleric.";
+  	$Cleric_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Fighter")) {
   	$result = $result."Fighter.";
+  	$Fighter_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Mage")) {
   	$result = $result."Mage.";
+  	$Mage_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Ranger")) {
   	$result = $result."Ranger.";
+  	$Ranger_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Rogue")) {
   	$result = $result."Rogue.";
+  	$Rogue_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Summoner")) {
   	$result = $result."Summoner.";
+  	$Summoner_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Tank")) {
   	$result = $result."Tank.";
+  	$Tank_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Minstrel")) {
   	$result = $result."Minstrel.";
+  	$Minstrel_counter++;
+  	$total_class_counter++;
   }
-  if (lc($_[0]) =~ lc("Soul Weaver")) {
-  	$result = $result."Soul Weaver.";
+
+  if (lc($_[0]) =~ lc("Soul_Weaver")) {
+  	$result = $result."Soul_Weaver.";
+  	$Soul_Weaver_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Tellsword")) {
   	$result = $result."Tellsword.";
+  	$Tellsword_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Magician")) {
   	$result = $result."Magician.";
+  	$Magician_counter++;
+  	$total_class_counter++;
   }
-  if (lc($_[0]) =~ lc("Song Warden")) {
-  	$result = $result."Song Warden.";
+
+  if (lc($_[0]) =~ lc("Song_Warden")) {
+  	$result = $result."Song_Warden.";
+  	$Song_Warden_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Trickster")) {
   	$result = $result."Trickster.";
+  	$Trickster_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Songcaller")) {
   	$result = $result."Songcaller.";
+  	$Songcaller_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Siren")) {
   	$result = $result."Siren.";
+  	$Siren_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Scryer")) {
   	$result = $result."Scryer.";
+  	$Scryer_counter++;
+  	$total_class_counter++;
   }
-  if (lc($_[0]) =~ lc("High Priest")) {
-  	$result = $result."High Priest.";
+
+  if (lc($_[0]) =~ lc("High_Priest")) {
+  	$result = $result."High_Priest.";
+  	$High_Priest_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Templar")) {
   	$result = $result."Templar.";
+  	$Templar_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Oracle")) {
   	$result = $result."Oracle.";
+  	$Oracle_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Protector")) {
   	$result = $result."Protector.";
+  	$Protector_counter++;
+  	$total_class_counter++;
   }
-  if (lc($_[0]) =~ lc("Shadow Disciple")) {
-  	$result = $result."Shadow Disciple.";
+
+  if (lc($_[0]) =~ lc("Shadow_Disciple")) {
+  	$result = $result."Shadow_Disciple.";
+  	$Shadow_Disciple_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Shaman")) {
   	$result = $result."Shaman.";
+  	$Shaman_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Apostle")) {
   	$result = $result."Apostle.";
+  	$Apostle_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Bladedancer")) {
   	$result = $result."Bladedancer.";
+  	$Bladedancer_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Highsword")) {
   	$result = $result."Highsword.";
+  	$Highsword_counter++;
+  	$total_class_counter++;
   }
-  if (lc($_[0]) =~ lc("Weapon Master")) {
-  	$result = $result."Weapon Master.";
+
+  if (lc($_[0]) =~ lc("Weapon_Master")) {
+  	$result = $result."Weapon_Master.";
+  	$Weapon_Master_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Spellsword")) {
   	$result = $result."Spellsword.";
+  	$Spellsword_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Hunter")) {
   	$result = $result."Hunter.";
+  	$Hunter_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Shadowblade")) {
   	$result = $result."Shadowblade.";
+  	$Shadowblade_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Bladecaller")) {
   	$result = $result."Bladecaller.";
+  	$Bladecaller_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Dreadnought")) {
   	$result = $result."Dreadnought.";
+  	$Dreadnought_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Sorcerer")) {
   	$result = $result."Sorcerer.";
+  	$Sorcerer_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Acolyte")) {
   	$result = $result."Acolyte.";
+  	$Acolyte_counter++;
+  	$total_class_counter++;
   }
-  if (lc($_[0]) =~ lc("Battle Mage")) {
-  	$result = $result."Battle Mage.";
+
+  if (lc($_[0]) =~ lc("Battle_Mage")) {
+  	$result = $result."Battle_Mage.";
+  	$Battle_Mage_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Archwizard")) {
   	$result = $result."Archwizard.";
+  	$Archwizard_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Spellhunter")) {
   	$result = $result."Spellhunter.";
+  	$Spellhunter_counter++;
+  	$total_class_counter++;
   }
-  if (lc($_[0]) =~ lc("Shadow Caster")) {
-  	$result = $result."Shadow Caster.";
+
+  if (lc($_[0]) =~ lc("Shadow_Caster")) {
+  	$result = $result."Shadow_Caster.";
+  	$Shadow_Caster_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Warlock")) {
   	$result = $result."Warlock.";
+  	$Warlock_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Spellstone")) {
   	$result = $result."Spellstone.";
+  	$Spellstone_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Bowsinger")) {
   	$result = $result."Bowsinger.";
+  	$Bowsinger_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Soulbow")) {
   	$result = $result."Soulbow.";
+  	$Soulbow_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Strider")) {
   	$result = $result."Strider.";
+  	$Strider_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Scion")) {
   	$result = $result."Scion.";
+  	$Scion_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Hawkeye")) {
   	$result = $result."Hawkeye.";
+  	$Hawkeye_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Scout")) {
   	$result = $result."Scout.";
+  	$Scout_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Falconer")) {
   	$result = $result."Falconer.";
+  	$Falconer_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Sentinel")) {
   	$result = $result."Sentinel.";
+  	$Sentinel_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Charlatan")) {
   	$result = $result."Charlatan.";
+  	$Charlatan_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Cultist")) {
   	$result = $result."Cultist.";
+  	$Cultist_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Duelist")) {
   	$result = $result."Duelist.";
+  	$Duelist_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Nightspell")) {
   	$result = $result."Nightspell.";
+  	$Nightspell_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Predator")) {
   	$result = $result."Predator.";
+  	$Predator_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Assassin")) {
   	$result = $result."Assassin.";
+  	$Assassin_counter++;
+  	$total_class_counter++;
   }
-  if (lc($_[0]) =~ lc("Shadow Lord")) {
-  	$result = $result."Shadow Lord.";
+
+  if (lc($_[0]) =~ lc("Shadow_Lord")) {
+  	$result = $result."Shadow_Lord.";
+  	$Shadow_Lord_counter++;
+  	$total_class_counter++;
   }
-  if (lc($_[0]) =~ lc("Shadow Guardian")) {
-  	$result = $result."Shadow Guardian.";
+
+  if (lc($_[0]) =~ lc("Shadow_Guardian")) {
+  	$result = $result."Shadow_Guardian.";
+  	$Shadow_Guardian_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Enchanter")) {
   	$result = $result."Enchanter.";
+  	$Enchanter_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Necromancer")) {
   	$result = $result."Necromancer.";
+  	$Necromancer_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Wild Blade")) {
   	$result = $result."Wild Blade.";
+  	$Wild_Blade_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Spellmancer")) {
   	$result = $result."Spellmancer.";
+  	$Spellmancer_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Beastmaster")) {
   	$result = $result."Beastmaster.";
+  	$Beastmaster_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Shadowmancer")) {
   	$result = $result."Shadowmancer.";
+  	$Shadowmancer_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Conjurer")) {
   	$result = $result."Conjurer.";
+  	$Conjurer_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Brood Warden")) {
   	$result = $result."Brood Warden.";
+  	$Brood_Warden_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Argent")) {
   	$result = $result."Argent.";
+  	$Argent_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Paladin")) {
   	$result = $result."Paladin.";
+  	$Paladin_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Knight")) {
   	$result = $result."Knight.";
+  	$Knight_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Spellshield")) {
   	$result = $result."Spellshield.";
+  	$Spellshield_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Warden")) {
   	$result = $result."Warden.";
+  	$Warden_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Nightshield")) {
   	$result = $result."Nightshield.";
+  	$Nightshield_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Keeper")) {
   	$result = $result."Keeper.";
+  	$Keeper_counter++;
+  	$total_class_counter++;
   }
+
   if (lc($_[0]) =~ lc("Guardian")) {
   	$result = $result."Guardian.";
+  	$Guardian_counter++;
+  	$total_class_counter++;
   }
 
   return $result;
@@ -589,6 +885,170 @@ unless ($agree eq "y") {
   # Closes the desired files.
   close(fhFull);
   close(fhSummary);
+
+  my $statsFile = "./AC-files/class-stats.txt";
+
+  open(fhStats, '>', $statsFile) or die "File opening failed: class-stats.txt";
+
+  sub percentage {
+    my $result = 0;
+    if ($total_class_counter > 0) {
+      $result = ($_[0] / $total_class_counter) * 100;
+    }
+    return $result;
+  }
+
+  #----------------------------------------------------------------------------
+  # statements to generate the stats file (143 lines).
+  #----------------------------------------------------------------------------
+
+  print fhStats "Bard occurance count: $Bard_counter\nBard percentage occurance: " . percentage($Bard_counter) . "\n\n";
+
+  print fhStats "Cleric occurance count: $Cleric_counter\nCleric percentage occurance: " . percentage($Cleric_counter) . "\n\n";
+
+  print fhStats "Fighter occurance count: $Fighter_counter\nFighter percentage occurance: " . percentage($Fighter_counter) . "\n\n";
+
+  print fhStats "Mage occurance count: $Mage_counter\nMage percentage occurance: " . percentage($Mage_counter) . "\n\n";
+
+  print fhStats "Ranger occurance count: $Ranger_counter\nRanger percentage occurance: " . percentage($Ranger_counter) . "\n\n";
+
+  print fhStats "Rogue occurance count: $Rogue_counter\nRogue percentage occurance: " . percentage($Rogue_counter) . "\n\n";
+
+  print fhStats "Summoner occurance count: $Summoner_counter\nSummoner percentage occurance: " . percentage($Summoner_counter) . "\n\n";
+
+  print fhStats "Tank occurance count: $Tank_counter\nTank percentage occurance: " . percentage($Tank_counter) . "\n\n";
+
+  print fhStats "Minstrel occurance count: $Minstrel_counter\nMinstrel percentage occurance: " . percentage($Minstrel_counter) . "\n\n";
+
+  print fhStats "Soul_Weaver occurance count: $Soul_Weaver_counter\nSoul_Weaver percentage occurance: " . percentage($Soul_Weaver_counter) . "\n\n";
+
+  print fhStats "Tellsword occurance count: $Tellsword_counter\nTellsword percentage occurance: " . percentage($Tellsword_counter) . "\n\n";
+
+  print fhStats "Magician occurance count: $Magician_counter\nMagician percentage occurance: " . percentage($Magician_counter) . "\n\n";
+
+  print fhStats "Song_Warden occurance count: $Song_Warden_counter\nSong_Warden percentage occurance: " . percentage($Song_Warden_counter) . "\n\n";
+
+  print fhStats "Trickster occurance count: $Trickster_counter\nTrickster percentage occurance: " . percentage($Trickster_counter) . "\n\n";
+
+  print fhStats "Songcaller occurance count: $Songcaller_counter\nSongcaller percentage occurance: " . percentage($Songcaller_counter) . "\n\n";
+
+  print fhStats "Siren occurance count: $Siren_counter\nSiren percentage occurance: " . percentage($Siren_counter) . "\n\n";
+
+  print fhStats "Scryer occurance count: $Scryer_counter\nScryer percentage occurance: " . percentage($Scryer_counter) . "\n\n";
+
+  print fhStats "High_Priest occurance count: $High_Priest_counter\nHigh_Priest percentage occurance: " . percentage($High_Priest_counter) . "\n\n";
+
+  print fhStats "Templar occurance count: $Templar_counter\nTemplar percentage occurance: " . percentage($Templar_counter) . "\n\n";
+
+  print fhStats "Oracle occurance count: $Oracle_counter\nOracle percentage occurance: " . percentage($Oracle_counter) . "\n\n";
+
+  print fhStats "Protector occurance count: $Protector_counter\nProtector percentage occurance: " . percentage($Protector_counter) . "\n\n";
+
+  print fhStats "Shadow_Disciple occurance count: $Shadow_Disciple_counter\nShadow_Disciple percentage occurance: " . percentage($Shadow_Disciple_counter) . "\n\n";
+
+  print fhStats "Shaman occurance count: $Shaman_counter\nShaman percentage occurance: " . percentage($Shaman_counter) . "\n\n";
+
+  print fhStats "Apostle occurance count: $Apostle_counter\nApostle percentage occurance: " . percentage($Apostle_counter) . "\n\n";
+
+  print fhStats "Bladedancer occurance count: $Bladedancer_counter\nBladedancer percentage occurance: " . percentage($Bladedancer_counter) . "\n\n";
+
+  print fhStats "Highsword occurance count: $Highsword_counter\nHighsword percentage occurance: " . percentage($Highsword_counter) . "\n\n";
+
+  print fhStats "Weapon_Master occurance count: $Weapon_Master_counter\nWeapon_Master percentage occurance: " . percentage($Weapon_Master_counter) . "\n\n";
+
+  print fhStats "Spellsword occurance count: $Spellsword_counter\nSpellsword percentage occurance: " . percentage($Spellsword_counter) . "\n\n";
+
+  print fhStats "Hunter occurance count: $Hunter_counter\nHunter percentage occurance: " . percentage($Hunter_counter) . "\n\n";
+
+  print fhStats "Shadowblade occurance count: $Shadowblade_counter\nShadowblade percentage occurance: " . percentage($Shadowblade_counter) . "\n\n";
+
+  print fhStats "Bladecaller occurance count: $Bladecaller_counter\nBladecaller percentage occurance: " . percentage($Bladecaller_counter) . "\n\n";
+
+  print fhStats "Dreadnought occurance count: $Dreadnought_counter\nDreadnought percentage occurance: " . percentage($Dreadnought_counter) . "\n\n";
+
+  print fhStats "Sorcerer occurance count: $Sorcerer_counter\nSorcerer percentage occurance: " . percentage($Sorcerer_counter) . "\n\n";
+
+  print fhStats "Acolyte occurance count: $Acolyte_counter\nAcolyte percentage occurance: " . percentage($Acolyte_counter) . "\n\n";
+
+  print fhStats "Battle_Mage occurance count: $Battle_Mage_counter\nBattle_Mage percentage occurance: " . percentage($Battle_Mage_counter) . "\n\n";
+
+  print fhStats "Archwizard occurance count: $Archwizard_counter\nArchwizard percentage occurance: " . percentage($Archwizard_counter) . "\n\n";
+
+  print fhStats "Spellhunter occurance count: $Spellhunter_counter\nSpellhunter percentage occurance: " . percentage($Spellhunter_counter) . "\n\n";
+
+  print fhStats "Shadow_Caster occurance count: $Shadow_Caster_counter\nShadow_Caster percentage occurance: " . percentage($Shadow_Caster_counter) . "\n\n";
+
+  print fhStats "Warlock occurance count: $Warlock_counter\nWarlock percentage occurance: " . percentage($Warlock_counter) . "\n\n";
+
+  print fhStats "Spellstone occurance count: $Spellstone_counter\nSpellstone percentage occurance: " . percentage($Spellstone_counter) . "\n\n";
+
+  print fhStats "Bowsinger occurance count: $Bowsinger_counter\nBowsinger percentage occurance: " . percentage($Bowsinger_counter) . "\n\n";
+
+  print fhStats "Soulbow occurance count: $Soulbow_counter\nSoulbow percentage occurance: " . percentage($Soulbow_counter) . "\n\n";
+
+  print fhStats "Strider occurance count: $Strider_counter\nStrider percentage occurance: " . percentage($Strider_counter) . "\n\n";
+
+  print fhStats "Scion occurance count: $Scion_counter\nScion percentage occurance: " . percentage($Scion_counter) . "\n\n";
+
+  print fhStats "Hawkeye occurance count: $Hawkeye_counter\nHawkeye percentage occurance: " . percentage($Hawkeye_counter) . "\n\n";
+
+  print fhStats "Scout occurance count: $Scout_counter\nScout percentage occurance: " . percentage($Scout_counter) . "\n\n";
+
+  print fhStats "Falconer occurance count: $Falconer_counter\nFalconer percentage occurance: " . percentage($Falconer_counter) . "\n\n";
+
+  print fhStats "Sentinel occurance count: $Sentinel_counter\nSentinel percentage occurance: " . percentage($Sentinel_counter) . "\n\n";
+
+  print fhStats "Charlatan occurance count: $Charlatan_counter\nCharlatan percentage occurance: " . percentage($Charlatan_counter) . "\n\n";
+
+  print fhStats "Cultist occurance count: $Cultist_counter\nCultist percentage occurance: " . percentage($Cultist_counter) . "\n\n";
+
+  print fhStats "Duelist occurance count: $Duelist_counter\nDuelist percentage occurance: " . percentage($Duelist_counter) . "\n\n";
+
+  print fhStats "Nightspell occurance count: $Nightspell_counter\nNightspell percentage occurance: " . percentage($Nightspell_counter) . "\n\n";
+
+  print fhStats "Predator occurance count: $Predator_counter\nPredator percentage occurance: " . percentage($Predator_counter) . "\n\n";
+
+  print fhStats "Assassin occurance count: $Assassin_counter\nAssassin percentage occurance: " . percentage($Assassin_counter) . "\n\n";
+
+  print fhStats "Shadow_Lord occurance count: $Shadow_Lord_counter\nShadow_Lord percentage occurance: " . percentage($Shadow_Lord_counter) . "\n\n";
+
+  print fhStats "Shadow_Guardian occurance count: $Shadow_Guardian_counter\nShadow_Guardian percentage occurance: " . percentage($Shadow_Guardian_counter) . "\n\n";
+
+  print fhStats "Enchanter occurance count: $Enchanter_counter\nEnchanter percentage occurance: " . percentage($Enchanter_counter) . "\n\n";
+
+  print fhStats "Necromancer occurance count: $Necromancer_counter\nNecromancer percentage occurance: " . percentage($Necromancer_counter) . "\n\n";
+
+  print fhStats "Wild_Blade occurance count: $Wild_Blade_counter\nWild_Blade percentage occurance: " . percentage($Wild_Blade_counter) . "\n\n";
+
+  print fhStats "Spellmancer occurance count: $Spellmancer_counter\nSpellmancer percentage occurance: " . percentage($Spellmancer_counter) . "\n\n";
+
+  print fhStats "Beastmaster occurance count: $Beastmaster_counter\nBeastmaster percentage occurance: " . percentage($Beastmaster_counter) . "\n\n";
+
+  print fhStats "Shadowmancer occurance count: $Shadowmancer_counter\nShadowmancer percentage occurance: " . percentage($Shadowmancer_counter) . "\n\n";
+
+  print fhStats "Conjurer occurance count: $Conjurer_counter\nConjurer percentage occurance: " . percentage($Conjurer_counter) . "\n\n";
+
+  print fhStats "Brood_Warden occurance count: $Brood_Warden_counter\nBrood_Warden percentage occurance: " . percentage($Brood_Warden_counter) . "\n\n";
+
+  print fhStats "Argent occurance count: $Argent_counter\nArgent percentage occurance: " . percentage($Argent_counter) . "\n\n";
+
+  print fhStats "Paladin occurance count: $Paladin_counter\nPaladin percentage occurance: " . percentage($Paladin_counter) . "\n\n";
+
+  print fhStats "Knight occurance count: $Knight_counter\nKnight percentage occurance: " . percentage($Knight_counter) . "\n\n";
+
+  print fhStats "Spellshield occurance count: $Spellshield_counter\nSpellshield percentage occurance: " . percentage($Spellshield_counter) . "\n\n";
+
+  print fhStats "Warden occurance count: $Warden_counter\nWarden percentage occurance: " . percentage($Warden_counter) . "\n\n";
+
+  print fhStats "Nightshield occurance count: $Nightshield_counter\nNightshield percentage occurance: " . percentage($Nightshield_counter) . "\n\n";
+
+  print fhStats "Keeper occurance count: $Keeper_counter\nKeeper percentage occurance: " . percentage($Keeper_counter) . "\n\n";
+
+  print fhStats "Guardian occurance count: $Guardian_counter\nGuardian percentage occurance: " . percentage($Guardian_counter) . "\n\n";
+
+
+  #----------------------------------------------------------------------------
+  close(fhStats);
 
   # For testing the hash keys and values.
   #foreach my $author (keys %comments) {
