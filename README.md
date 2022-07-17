@@ -6,6 +6,11 @@ This program is for learning purposes only.
 
 Version: 1.2
 
+Requirements:
+- Internet Connection
+- Perl
+- CPAN LWP::Protocol::https
+
 Goals:
 - Learn regex usage.
 - Learn perl
